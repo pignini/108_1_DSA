@@ -18,11 +18,13 @@ class MyLinkedList:
         """
         Get the value of the index-th node in the linked list. If the index is invalid, return -1.
         """
-        current_node = 0
-        while self.next != 0:
-            current_node  += 1
-            if current_node == index:
-                print self.val
+        current_index = 0
+        curr_node = self.head
+        while current_index != index :
+            current_index += 1
+            curr_node = curr_node.next
+            print(curr_node.val)
+            return
         
 
     def addAtHead(self, val: int) -> None:
@@ -33,41 +35,42 @@ class MyLinkedList:
         new_node.next = self.head #把原本的頭節點設定成新節點的下一個
         self.head = new_node #把新節點設立成頭節點
          
-    #count node
-        current_node = 0
-        while self.next != 0:
-            current_node  += 1
-            return current_node
-        
-        
             
-
     def addAtTail(self, val: int) -> None:
         """
         Append a node of value val to the last element of the linked list.
         """
-        new_node = node(val)
-        if self.next is None:
-            self.next = new_node
+        new_node = node(val) #建立一個新的節點
+        if self.head is None: #當第一個節點是空的，代表目前沒有節點在list中
+            self.head = new_node #把第一個節點令成新的節點
             return
 
+        current_node = self.head #從目前有的node作為起點
+        while current_node.next != None: #當目前有的node的下一個節點不是空值
+            current_node = current_node.next #走訪到下一個點
+        current_node.next = new_node #把最後一個點的下一個新增成新的節點
+        
         
     def addAtIndex(self, index: int, val: int) -> None:
         """
         Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
         """
-        self.val = val
+        new_node = node(val)
+        cur_node = self.head
+        
+        cur_index = 0
+        while cur_index != index-1:
+            cur_index += 1
+        cur_index.next = new_node
+        new_node.next = old_node
         
        
-        
-
     def deleteAtIndex(self, index: int) -> None:
         """
         Delete the index-th node in the linked list, if the index is valid.
         """
         
-
-
+        
 # Your MyLinkedList object will be instantiated and called as such:
 # obj = MyLinkedList()
 # param_1 = obj.get(index)
