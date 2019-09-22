@@ -56,21 +56,27 @@ class MyLinkedList:
         Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
         """
         new_node = node(val)
-        cur_node = self.head
+        curr_index = 0 
+        curr_node = self.head
+        while curr_index != index:
+            curr_index += 1
+            curr_node = curr_node.next
+        old_node = curr_node.val
+        curr_node.next = new_node
+        new_node.next = 
+            
         
-        cur_index = 0
-        while cur_index != index-1:
-            cur_index += 1
-        cur_index.next = new_node
-        new_node.next = old_node
         
        
+        
+
     def deleteAtIndex(self, index: int) -> None:
         """
         Delete the index-th node in the linked list, if the index is valid.
         """
         
-        
+
+
 # Your MyLinkedList object will be instantiated and called as such:
 # obj = MyLinkedList()
 # param_1 = obj.get(index)
