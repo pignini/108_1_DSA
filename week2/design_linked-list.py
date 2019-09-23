@@ -1,6 +1,7 @@
 # [Design Linked list](https://leetcode.com/problems/design-linked-list/)
 
 class Node: #創建一個節點分類
+class Node: #創建一個節點分類
     def __init__(self, val=None):
         self.val = val #節點分類屬性val，是節點的值
         self.next = None　#節點分類屬性nexr，是節點下一個指向的值
@@ -58,17 +59,17 @@ class MyLinkedList:
         new_node = node(val)
         curr_index = 0 
         curr_node = self.head
-        while curr_index != index:
-            curr_index += 1
-            curr_node = curr_node.next
-        old_node = curr_node.val
-        curr_node.next = new_node
-        new_node.next = 
-            
-        
-        
-       
-        
+        if index == len(linkedlList):
+            addAtTail(index)
+        elif index > len(linkedList):
+            pass
+        else:
+            while curr_index != index:
+                curr_index += 1
+                curr_node = curr_node.next
+            old_node = curr_node.next
+            curr_node.next = new_node
+            new_node.next = old_node
 
     def deleteAtIndex(self, index: int) -> None:
         """
