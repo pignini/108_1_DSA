@@ -75,7 +75,23 @@ class MyLinkedList:
         """
         Delete the index-th node in the linked list, if the index is valid.
         """
-        
+         if index >= len(linkedList):
+            break
+        elif:
+            cur_index = 1
+            cur_index2 = -1
+            cur_node = self.head
+            cur_node2 = self.head
+            while index != cur_index:
+                cur_index += 1
+                cur_node = cur_node.next
+            while index != cur_index2:
+                cur_index2 += 1
+                cur_node2 = cur_node2.next
+            
+            pre_node = cur_node
+            back_node = cur_node2
+            pre_node.next = back_node
 
 
 # Your MyLinkedList object will be instantiated and called as such:
