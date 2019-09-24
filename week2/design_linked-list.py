@@ -21,9 +21,7 @@ class MyLinkedList:
         """
         self.head = Node()
         
-        
-   
-    
+
     def get(self, index: int) -> int:
         """
         Get the value of the index-th node in the linked list. If the index is invalid, return -1.
@@ -41,7 +39,8 @@ class MyLinkedList:
         Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
         """
         new_node = Node(val) #建立一個新節點
-        new_node.next = self.head #把原本的頭節點設定成新節點的下一個
+        cur_node = self.head
+        new_node.next = cur_node #把原本的頭節點設定成新節點的下一個
         self.head = new_node #把新節點設立成頭節點
          
             
@@ -50,11 +49,12 @@ class MyLinkedList:
         Append a node of value val to the last element of the linked list.
         """
         new_node = Node(val) #建立一個新的節點
+
+        current_node = self.head #從目前有的node作為起點
         if self.head is None: #當第一個節點是空的，代表目前沒有節點在list中
             self.head = new_node #把第一個節點令成新的節點
             return
-
-        current_node = self.head #從目前有的node作為起點
+        
         while current_node.next != None: #當目前有的node的下一個節點不是空值
             current_node = current_node.next #走訪到下一個點
         current_node.next = new_node #把最後一個點的下一個新增成新的節點
