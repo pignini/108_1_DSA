@@ -1,4 +1,4 @@
-# My Week learning posts
+# My Weekly learning posts
 
 ## week 2
  > Topic: Design a linked list
