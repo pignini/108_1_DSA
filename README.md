@@ -1,5 +1,5 @@
 # 108_1_Data Structure and Algorithm
-Here is my weekly learning checklist — **detailed notes in week-folders**. :)  
+Here is my weekly learning checklist — **detailed notes wrote in week notes**. :)  
 I'm Ellier. I enjoy learning. Welcome any feedback and   　　
   
 ## W2 - 190920 Fri
