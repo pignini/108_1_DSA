@@ -30,8 +30,19 @@
 4. [Linked List: 新增資料、刪除資料、反轉](http://alrightchiu.github.io/SecondRound/linked-list-xin-zeng-zi-liao-shan-chu-zi-liao-fan-zhuan.html#series)
 
 ## week 3
-> Topic :
+> Topic : Stack and Queue
 
-1. 
+1. stack and queue 都是一種儲存資料的方式
+2. Why stack?
+ * 復原(undo)/回上一頁功能的需求
+3. Why Queue?
+ * 
+4. 記法
+ * stack 疊盤，後進先出
+ * queue 排隊不能插隊，先進先出
+
+### Key takeaway
+1. 熟悉語法
+2. 想法轉成程式碼的流程
 
 ### reference
