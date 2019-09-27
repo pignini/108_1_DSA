@@ -9,9 +9,13 @@ class MinStack:
         self.next = None
 
     def push(self, x: int) -> None:
-        if self.size = 0:
-            head = self.val
-            self.size += 1
+        self.size += 1
+        while self.size == 1:
+            top = current = self.val
+        while self.size != 0 or 1:
+            current.next = self.val
+            top = self.val
+            current = current.next
 
     def pop(self) -> None:
         
