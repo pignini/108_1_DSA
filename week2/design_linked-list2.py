@@ -30,21 +30,26 @@ class MyLinkedList:
         """
         new_node = Node(val) #建立一個新節點
         cur_node = self.head
-        original_first = cur_node.next
-        new_node.next = original_first
-
+        if cur_node.next == None:
+            head = new_node 
+            cur_node.next = new_node
+        else:
+            cur_node = cur_node.next
+            original_head = cur_node
+            head = new_node
+            new_nod.next = original_head
             
     def addAtTail(self, val: int) -> None:
         """
         Append a node of value val to the last element of the linked list.
         """
         new_node = Node(val) #建立一個新的節點
-
         current_node = self.head
         while current_node.next != None: 
             current_node = current_node.next
         current_node.next = new_node
         
+            
         
         
     def addAtIndex(self, index: int, val: int) -> None:
