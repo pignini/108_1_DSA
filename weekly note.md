@@ -22,11 +22,16 @@
  * 透過`get(index)`找到指定位置對應的值
  * 透過`deleteAtIndex(index)`刪除指定位置對應的值
  * 再次透過`get(index)`找到更新linked-list指定位置對應的值
- 
-4. 
 
 ### reference
 1. [Python Data Structures #2: Linked List](https://www.youtube.com/watch?v=JlMyYuY1aXU&t=610s)
 2. [Data Structures in Python: Singly Linked Lists -- Deletion](https://www.youtube.com/watch?v=gXY_2wsQf3A)
 3. [Linked List: Intro(簡介)](http://alrightchiu.github.io/SecondRound/linked-list-introjian-jie.html)
 4. [Linked List: 新增資料、刪除資料、反轉](http://alrightchiu.github.io/SecondRound/linked-list-xin-zeng-zi-liao-shan-chu-zi-liao-fan-zhuan.html#series)
+
+## week 3
+> Topic :
+
+1. 
+
+### reference
