@@ -1,6 +1,7 @@
 # 108_1_Data Structure and Algorithm
-I'm 汶穗。Here is my weekly learning checklist — detailed notes wrote in **weekly notes**. :)  
+I'm 汶穗。Here is my weekly learning checklist — detailed notes wrote in **[weekly notes](https://github.com/okpersist/108_1_DSA/blob/master/weekly%20note.md)**. :)  
 Other Topics related to this class[😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both) (click smile face!)
+
 
   
 ## W2 - 190920 Fri
