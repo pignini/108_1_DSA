@@ -5,6 +5,6 @@
 ## W2 - 190920 Fri
 - [ ] Design linked-list
 
-## W3 - 190927 Tue
+## W3 - 190927 F
 - [ ] Stack and Queue
 
