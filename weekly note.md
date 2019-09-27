@@ -1,4 +1,4 @@
-# My Weekly learning posts
+# My Weekly learning notes
 
 ## week 2
  > Topic: Design a linked list
@@ -53,3 +53,5 @@
    * 想法轉成程式碼的流程
 
 ### reference
+1. [CS50 2017 - Lecture 5 - Data Structures](https://www.youtube.com/watch?v=eZQBx8YJ6Zs)
+2. [CS50.tv](http://cs50.tv/2017/fall/)
