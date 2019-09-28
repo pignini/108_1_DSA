@@ -1,7 +1,7 @@
 # 108_1_Data Structure and Algorithm
 I'm 汶穗。Here is my weekly learning notes. :)
-  * My Learning check(Other related topics also put there.)[😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both) (click smile face!)
-  * My CS50-notes[🖋](click☚)(https://github.com/okpersist/CS50)
+  * My Learning check(Other related topics also put there.)[😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(☚click)
+  * My CS50-notes[🖋](https://github.com/okpersist/CS50)(☚click)
 
 ## Content
 - [week 2](#week-2)
