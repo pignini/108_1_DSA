@@ -71,8 +71,8 @@ I'm 汶穗。Here is my weekly learning notes. :)
 # week 4
 ## ideas
 * 下面例對應的index [0,1,2,3,4,5,6]    [0,1,2,3,4,5,6]
-* 假設一 array: a = [2,3,1,4,4,6,4] or [2,1,2,4,4,3,6] or [4,2,1,3,9,11,12]
-* 排序後:sorted(a)= [1,2,3,4,4,4,6] or [1,2,2,3,4,4,6] or [1,2,3,4,9,11,12]
+* 假設一 array: a = [2,3,1,4,4,6,4] or [2,1,2,4,4,3,6] or [4,2,1,3,7,11,12]
+* 排序後:sorted(a)= [1,2,3,4,4,4,6] or [1,2,2,3,4,4,6] or [1,2,3,4,7,11,12]
 * 理想中 array: b = [1,2,3,4,5,6,7]
 * 觀察: 
     * 每個位置的數值數值 = 對應的index+1
@@ -84,16 +84,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
     * 下一個等於前一個 -> 該index有缺失值=index+1，而且此index的值重複了
     > 找到缺失值和重複值可以先存在一個變數內最後一起回傳  
 ~找出缺少值:檢查每一個位置，每一個數值都要等於該位置的index+1，若不等於可以分3種情況: (1)大於index+2以上 (2)小於index (3)等於index~
+> [code](https://github.com/okpersist/108_1_DSA/blob/master/week4/SetMismatch.py)
 
-```python
-# 範例
-Input: nums = [1,2,2,4]
-Output: [2,3]
-```
-
-```python
-def setMismatch():
-    num = sorted(num)
-```
 ### reference
 
