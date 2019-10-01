@@ -51,7 +51,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
    * stack 疊盤，後進先出
    * queue 排隊不能插隊，先進先出
 
-> My ideas about make a mini stack?
+> My ideas about making a mini stack?
    * `top()`:先確認是否至少有一個stack，沒有的話，把傳入的數值令成第一個stack。有的話，把最後一個傳入的令成top。
    * `push()`: 建立往上順序性的堆疊stacks。一樣先確認是否至少有一個stack，沒有的話建立第一個stack同時令為top，有的話把stack建立在第一個stack上面，並把最後一個傳入的值令為top。
    * `pop()`:刪除指定的stack。先找到top stack，回溯到指定的index，刪除該stack。
