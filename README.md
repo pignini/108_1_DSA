@@ -83,6 +83,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
     * 下一個值比前一個值+2以上 -> 該index有缺失值=index+1
     * 下一個等於前一個 -> 該index有缺失值=index+1，而且此index的值重複了
     > 找到缺失值和重複值可以先存在一個變數內最後一起回傳  
+
 ~找出缺少值:檢查每一個位置，每一個數值都要等於該位置的index+1，若不等於可以分3種情況: (1)大於index+2以上 (2)小於index (3)等於index~
 > [code](https://github.com/okpersist/108_1_DSA/blob/master/week4/SetMismatch.py)
 
