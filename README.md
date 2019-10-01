@@ -3,11 +3,12 @@ I'm 汶穗。Here is my weekly learning notes. :)
   * My Learning check(Other related topics also put there.)[😀](https://hackmd.io/PFMjkciiRYuTuaYk77Be8Q?both)(☚click)
   * My CS50 notes[🖋](https://github.com/okpersist/CS50/tree/master/2013fall)(☚click)
 
-## Content
+# Content
 - [week 2](#week-2)
 - [week 3](#week-3)
+- [week 4](#week-4)
 
-## week 2
+# week 2
  > Topic: Design a linked list
 
 1. What's class?
@@ -30,7 +31,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
    * 透過`deleteAtIndex(index)`刪除指定位置對應的值
    * 再次透過`get(index)`找到更新linked-list指定位置對應的值
 
-### reference
+## reference
 1. [Python Data Structures #2: Linked List](https://www.youtube.com/watch?v=JlMyYuY1aXU&t=610s)
 2. [Data Structures in Python: Singly Linked Lists -- Deletion](https://www.youtube.com/watch?v=gXY_2wsQf3A)
 3. [Linked List: Intro(簡介)](http://alrightchiu.github.io/SecondRound/linked-list-introjian-jie.html)
@@ -38,7 +39,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
 
 ###### [🔗CONTENTS](#content)
 
-## week 3
+# week 3
  > Topic : Stack and Queue
 
 1. stack and queue 都是一種儲存資料的方式
@@ -56,14 +57,43 @@ I'm 汶穗。Here is my weekly learning notes. :)
    * `pop()`:刪除指定的stack。先找到top stack，回溯到指定的index，刪除該stack。
    * `getMin()`:傳回總共stack的個數。先找到top，往下數到最底層的stack。
 
-### Key takeaway
+## Key takeaway
 1. 學習程式的兩個階段
    * 熟悉語法
    * 想法轉成程式碼的流程
 
-### reference
+## reference
 1. [CS50 2017 - Lecture 5 - Data Structures](https://www.youtube.com/watch?v=eZQBx8YJ6Zs)
 2. [CS50.tv](http://cs50.tv/2017/fall/)
 
 ###### [🔗CONTENTS](#content)
+
+# week 4
+## ideas
+* 下面例對應的index [0,1,2,3,4,5,6]    [0,1,2,3,4,5,6]
+* 假設一 array: a = [2,3,1,4,4,6,4] or [2,1,2,4,4,3,6] or [4,2,1,3,9,11,12]
+* 排序後:sorted(a)= [1,2,3,4,4,4,6] or [1,2,2,3,4,4,6] or [1,2,3,4,9,11,12]
+* 理想中 array: b = [1,2,3,4,5,6,7]
+* 觀察: 
+    * 每個位置的數值數值 = 對應的index+1
+    * 下一個位置的值等於前一個+1
+
+1. 先把list由小到大排列
+2. 從1開始檢查，若下一個不是前一個+1，可能出現的情況：
+    * 下一個值比前一個值+2以上 -> 該index有缺失值=index+1
+    * 下一個等於前一個 -> 該index有缺失值=index+1，而且此index的值重複了
+    > 找到缺失值和重複值可以先存在一個變數內最後一起回傳
+~找出缺少值:檢查每一個位置，每一個數值都要等於該位置的index+1，若不等於可以分3種情況: (1)大於index+2以上 (2)小於index (3)等於index~
+
+```python
+# 範例
+Input: nums = [1,2,2,4]
+Output: [2,3]
+```
+
+```python
+def setMismatch():
+    num = sorted(num)
+```
+### reference
 
