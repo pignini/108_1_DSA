@@ -69,6 +69,7 @@ I'm 汶穗。Here is my weekly learning notes. :)
 ###### [🔗CONTENTS](#content)
 
 # week 4
+> setmatch
 ## ideas
 * 下面例對應的index [0,1,2,3,4,5,6]    [0,1,2,3,4,5,6]
 * 假設一 array: a = [2,3,1,4,4,6,4] or [2,1,2,4,4,3,6] or [4,2,1,3,7,11,12]
@@ -86,6 +87,10 @@ I'm 汶穗。Here is my weekly learning notes. :)
 
 ~找出缺少值:檢查每一個位置，每一個數值都要等於該位置的index+1，若不等於可以分3種情況: (1)大於index+2以上 (2)小於index (3)等於index~
 > [code](https://github.com/okpersist/108_1_DSA/blob/master/week4/SetMismatch.py)
+
+> Insertion Sort
+## ideas
+
 
 ### reference
 
