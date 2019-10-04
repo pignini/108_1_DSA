@@ -91,6 +91,19 @@ I'm 汶穗。Here is my weekly learning notes. :)
 > Insertion Sort
 ## ideas
 
+> QuickSort
+## What is quicksort?
+- 快速排序法：對於一串未排序數字，選一個數字基準點（推薦選中間數），比較基準點左右兩邊的數字，比基準點大的放基準點右邊，比基準點小的放基準點左邊。再從原本的基準點分成的左右兩堆中各選一個數字當基準點（也可選中間數），再重複比較數字大小改變位置。
 
-### reference
+## ideas
+- example: 4, 31, 7, 8, 1, 2
 
+1. 令 `mid_index` = 以((數串的長度//2)-1)選出中間的數。 _*答案有帶小數點時，取最接近商比較小的最大整數_
+2. 對中間數取值 `mid_index.val` 
+3. 把基準點左右兩堆的數字個別與基準點大小比較
+
+
+
+
+## reference
+###### [🔗CONTENTS](#content)
